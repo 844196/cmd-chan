@@ -1,67 +1,53 @@
-body {
-	background-color: #c77e4f;
-}
-.width {
-	width: 900px;
-}
-.container {
-	width: 900px;
-	margin: 0px auto;
-}
-.phone,
-.phone .width {
-	width: 100%;
-}
-
-
 /* メニューバー */
-.menu {
+header>ul {
 	margin: 0;
 	padding: 0;
 	background-color: #b3b0b9;
 	list-style-type: none;
+	/* what */
+	margin-top: -4px;
 }
 /* メニュー */
-.menu>li {
+header>ul>li {
 	margin: 0;
 	width: calc(100%/4);
 	float: left;
 	font-size: 18px;
 	text-align: center;
 }
-.phone .menu>li {
+.phone header>ul>li {
 	font-size: 1em;
 }
-.menu:after {
+header>ul:after {
 	content: "";
 	clear: both;
 	display: block;
 }
-.menu>li:hover,
+header>ul>li:hover,
 .submenu>li:hover{
 	background-color: #d2cfda;
 }
-.menu-name {
+header>ul>li>div {
 	padding: 5px 0;
 	display:block;
 }
-.phone .menu-name {
+.phone header>ul>li>div {
 	padding: 10px 0;
 }
-.menu-name>a,
-.submenu>li>a{
+header>ul>li>div>a,
+header>ul>li>ul>li>a{
 	color: black;
 	text-decoration:none;
 	display:block;
 }
 
-.menu>.active,
-.menu>.active:hover,
+header>ul>.active,
+header>ul>.active:hover,
 .submenu>.active,
 .submenu>.active:hover{
 	background-color: #777480;
 }
-.menu-name:hover + .submenu, .submenu:hover {
+header>ul>li>div:hover + .submenu, .submenu:hover {
 	display: block;
 }
 /* メニューアイテム */
@@ -86,20 +72,4 @@ body {
 }
 .submenu>li:last-child{
 	padding-bottom: 5px;
-}
-
-#content {
-	background-color: #cfa68b;
-	padding: 30px;
-}
-/* フッター */
-footer {
-	margin: 0px;
-	background-color: #b3b0b9;
-	text-align: right;
-	font-size: 12px;
-	padding: 10px 20px 10px 0px;
-}
-.phone footer {
-	font-size: 10px;
 }

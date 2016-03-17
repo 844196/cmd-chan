@@ -1,0 +1,24 @@
+<style>
+.icon {
+	margin: 5;
+	width: 128px;
+	border: 5px solid #C77E4F;
+	border-radius: 12px;
+	background-color: #CFA68B;
+}
+</style>
+<script>
+$(function(){
+	$('.icon').click(function(){
+		var url = "http://twitter.com/intent/tweet?text=%0A%0A";
+		url += "%23%e3%82%b3%e3%83%9e%e3%83%96%e3%83%ad%e3%81%a1%e3%82%83%e3%82%93";
+		url += "%0Ahttp://keepoff07.github.io/cmd-chan/twitterstamp";
+		url += "%0Ahttp://"+$(this).attr('stamp');
+		window.open(
+			url,
+			'tweetwindow',
+			'width=600, height=300, personalbar=0, toolbar=0, scrollbars=1, resizable=!'
+		);
+	});
+});
+</script>

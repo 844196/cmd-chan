@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>コマブロちゃん - {{ page.title }}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta name="author" content="keepoff07">
+	<meta name="description" content="">
+	
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+	
+	{% include {{ page.twitter_card }}.html %}
+	<link rel="shortcut icon" href="cbp-src/img/favicon.png" type="image/png">
+	
+	<link rel="stylesheet" href="cbp-src/css/default.css">
+	<link rel="stylesheet" href="cbp-src/css/header.css">
+	<link rel="stylesheet" href="cbp-src/css/footer.css">
+	{% include {{ page.addon }}.html %}
+</head>
+<body>
+	<div id="container" class="container">
+		{% include header.html %}
+		<div id="content">
+			{{ content }}
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
+</html>
