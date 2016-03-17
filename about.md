@@ -30,4 +30,4 @@ addon: none
 
 ## 問い合わせ
 本サイトはkeepoffが管理しています。  
-問い合わせは[Twitter](https://twitter.com/keep_off07)または[GitHub](https://github.com/keepoff07/keepoff07.github.io/issues)まで。
+問い合わせは[Twitter](https://twitter.com/keep_off07)または[GitHub](https://github.com/keepoff07/cmd-chan/issues)まで。
